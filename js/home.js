@@ -20,8 +20,15 @@ for(let i = 1; i <= 6; i++){
         }
         // Main-Part-02
 
-        const div = creitdiv(`complete-btn-${i}`);
-        console.log(div.parentNode.parentNode);
-        document.getElementById('activity-log').appendChild(div);
+        const div = creitdiv(`complete-btn-${i}`,btn);
+        document.getElementById('activities').appendChild(div);
     });
 }
+
+document.getElementById('clear-btn').addEventListener('click', () => {
+    document.getElementById('activities').innerHTML="";
+  });
+
+  document.getElementById("discover").addEventListener("click", function() {
+    window.location.href = "./blog.html";
+  });

@@ -34,7 +34,8 @@
                         <i class="fa-regular fa-square-check p-3 text-2xl bg-white rounded-full"></i>
                         <h2>Task Assigned <br><span id="remaining-task" class="text-3xl font-bold">06</span> </h2>
                     </div>
-                    <div class="bg-gradient-to-tr from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] rounded-xl w-1/2 p-3">
+                    <div id="discover"
+                        class=" cursor-pointer bg-gradient-to-tr from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] rounded-xl w-1/2 p-3">
                         <div class="flex  justify-start items-center gap-2">
                             <div class=""><img class="w-full" src="./assets/board.png" alt=""></div>
                             <h2 class="text-white text-xl font-semibold">Discover Something <br> New Today!</h2>
@@ -47,7 +48,6 @@
                 </div>
             </div>
         </section>
-        <!-- flex justify-between items-center gap-6 -->
 
         <section class="w-4/5 mx-auto my-5 grid grid-cols-4 gap-5">
             <div class="grid grid-cols-3 gap-9 w-full col-span-3">
@@ -174,11 +174,14 @@
                         <i class="fa-regular fa-clock text-xl mr-2"></i>
                         <span class="text-xl font-semibold">Activity Log</span>
                     </div>
-                    <button class="btn btn-primary">Clear History</button>
+                    <button id="clear-btn" class="btn btn-primary">Clear History</button>
                 </div>
 
-                <div class="bg-[#F4F7FF] rounded-md p-2 my-4">
-                    <p class="text-sm font-normal">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                <div id="activities">
+                    <div id="a" class="bg-[#F4F7FF] rounded-md p-2 my-2">
+                        <p id="abid" class="text-sm font-normal">You have Complete The Task Add Dark Mode at 12:48:15 PM
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
