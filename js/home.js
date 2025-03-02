@@ -13,10 +13,9 @@ for(let i = 1; i <= 6; i++){
 
         document.getElementById('total-task').innerText = newtotal;
         document.getElementById('remaining-task').innerText = newRemaining;
+        alert('Board Updated Successfully');
         if(total_removed === 6){
-            alert('All Board Removed ');
-        }else{
-            alert('Board Updated Successfully');
+            alert('Congrats!!! You Have completed all the current tasks');
         }
         // Main-Part-02
 
@@ -32,3 +31,9 @@ document.getElementById('clear-btn').addEventListener('click', () => {
   document.getElementById("discover").addEventListener("click", function() {
     window.location.href = "./blog.html";
   });
+
+  document.getElementById('change-bg').addEventListener('click',function(){
+    document.body.style.backgroundColor = getRandomHexColor();
+  });
+
+ 

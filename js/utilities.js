@@ -20,3 +20,26 @@ function creitdiv(id,btn){
     div.appendChild(p);
     return div;
 }
+
+function date(id){
+  console.log('ok');
+  const now = new Date();
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  const currentDate = `${days[now.getDay()]} ${months[now.getMonth()]} ${now.getDate()} ${now.getFullYear()}`;
+  const h2 = document.createElement('h2');
+  h2.innerText = currentDate;
+  h2.classList.add('text-2xl');
+  h2.classList.add('font-bold');
+  document.getElementById(id).appendChild(h2);
+}
+
+date("showDate");
+
+function getRandomHexColor() {
+  let hex = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  return hex;
+}
